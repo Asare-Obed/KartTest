@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logAllRefUpdates = always
+	symlinks = false
+	ignorecase = true
+[kart "repostructure"]
+	version = 3
+[kart "workingcopy"]
+	location = kart.gpkg
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = filter.lfs.clean
+	smudge = filter.lfs.smudge
+[lfs]
+	repositoryformatversion = 0
